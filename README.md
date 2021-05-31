@@ -1,1 +1,1 @@
-잘 되게 해주세요.
+# GitHub clone
