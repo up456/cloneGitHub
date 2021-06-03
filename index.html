@@ -36,6 +36,7 @@
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
  <link rel="stylesheet" href="css/main.css">
 
+ <script defer src="/main.js" ></script>
 </head>
 <body>
   <div class="body__container">
@@ -46,7 +47,7 @@
 
         <div class="menu-group float--left">
           <div class="logo"><a href="/">로고</a></div>
-          <ul class="main-menu">
+          <ul class="main-menu toggle">
             <li class="item"><a href="#">Personal</a></li>
             <li class="item"><a href="#">Open source</a></li>
             <li class="item"><a href="#">Business</a></li>
@@ -54,7 +55,7 @@
           </ul>
         </div>
 
-        <div class="sign-group float--right">
+        <div class="sign-group float--right toggle">
           <div class="btn-group">
             <a href="#" class="btn sign-in">Sign in</a>
             <a href="#" class="btn btn--primary sign-up">Sign up</a>
@@ -69,6 +70,8 @@
             <li><a href="#">Support</a></li>
           </ul>
         </div>
+
+        <div id="toggle-btn">Header Menu Toggle Button</div>
 
       </div>
 </header>
@@ -181,7 +184,7 @@
 
   <!-- FOOTER -->
   <footer class="section">
-    <div class="inner clearfix">
+    <div class="inner">
 
       <ul class="site-links float--right">
         <li><a href="#">Contact GitHub
