@@ -39,9 +39,39 @@
 </head>
 <body>
   <div class="body__container">
-    <div class="btn btn--primary">안녕.</div>
-    
 
+    <!-- HEADER -->
+    <header class="section">
+      <div class="inner">
+
+        <div class="menu-group">
+          <div class="logo"><a href="/">로고</a></div>
+          <ul class="main-menu">
+            <li class="item"><a href="#">Personal</a></li>
+            <li class="item"><a href="#">Open source</a></li>
+            <li class="item"><a href="#">Business</a></li>
+            <li class="item"><a href="#">Explore</a></li>
+          </ul>
+        </div>
+
+        <div class="sign-group">
+          <div class="btn-group">
+            <a href="#" class="btn sign-in">Sign in</a>
+            <a href="#" class="btn btn--primary sign-up">Sign up</a>
+          </div>
+          <form id="search-form" method="POST" action=""> <!--  양식은 고유해야서 id추가 -->
+            <input type="text" id="search" class="input--text" placeholder="Search GitHub">
+            <input type="submit" value="Submit"> <!--서버로 데이터 전송-->
+          </form>
+          <ul class="sub-menu">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+</header>
   </div>
 </body>
 </html>

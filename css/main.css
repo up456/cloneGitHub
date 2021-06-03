@@ -5,6 +5,10 @@
   font-weight: 400;
   color: #333;
 }
+a {
+  text-decoration: none;
+}
+
 
 /* BUTTON */
 .btn {
@@ -25,6 +29,8 @@
   box-sizing: border-box;
 
   position: relative;
+
+  color: #333;
 }
 
 .btn:hover::before {
@@ -52,7 +58,7 @@
   box-sizing:border-box;
   outline:none;
   box-shadow: inset 0 1px 2px rgba(0,0,0,.075);
-  font-size: 16px;
+  font-size: 14px;
 }
 .input--text:focus {
   border-color: #51a7e8;
@@ -64,3 +70,48 @@
 .input--text::-webkit-input-placeholder { color: #cacaca;}
 .input--text::-ms-input-placeholder { color: #cacaca;}
 .input--text::-moz-input-placeholder { color: #cacaca;}
+
+
+/* BODY */
+header {
+  border-bottom:  1px solid rgba(0,0,0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0,.75);
+  background:#fff ;
+}
+header .inner {
+  max-width: 980px;
+  height: 78px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .menu-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .logo {
+  margin-right: 10px;
+}
+header .logo a {
+  background: url(../img/logo.svg);
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px; /*css에서 이미지를 넣을경우 대체텍스트로 활용하기위해 관례로-9999px*/
+}
+header .logo a:hover {
+  background: url(../img/logo_on.svg);
+}
+
+header .main-menu {
+  display: flex;
+}
+header .main-menu li a {  /* a테그를 block요소로 만들어서 선택범위 확장 */
+  color: #3c4146;
+  padding: 10px;
+  display: block;
+}
+header .main-menu li a:hover {
+  color: #4078c0;
+}
