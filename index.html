@@ -42,9 +42,9 @@
 
     <!-- HEADER -->
     <header class="section">
-      <div class="inner">
+      <div class="inner clearfix">
 
-        <div class="menu-group">
+        <div class="menu-group float--left">
           <div class="logo"><a href="/">로고</a></div>
           <ul class="main-menu">
             <li class="item"><a href="#">Personal</a></li>
@@ -54,7 +54,7 @@
           </ul>
         </div>
 
-        <div class="sign-group">
+        <div class="sign-group float--right">
           <div class="btn-group">
             <a href="#" class="btn sign-in">Sign in</a>
             <a href="#" class="btn btn--primary sign-up">Sign up</a>
@@ -72,6 +72,98 @@
 
       </div>
 </header>
+
+<!-- VISUAl -->
+<section class="section section--visual">
+  <div class="inner">
+
+    <div class="summary">         <!--&nbsp;로 단어단위 연결 (반응형) -->
+      <h2 class="summary__title">How&nbsp;people build&nbsp;software</h2> 
+      <p class="summary__description">Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.</p>
+    </div>
+
+    <form id="sign-form" method="POST" action="">
+      <ul> <!-- input 인라인요소 블럭으로 관리하기 용이한 ul로 활용 -->
+        <li><input type="text" class="input--text" placeholder="Pcik a usearnam"></li>
+        <li><input type="email" class="input--text" placeholder="Your email address"></li>
+        <li>
+          <input type="password" class="input--text" placeholder="Create a password">
+          <p class="caption">Use at least one letter, one numeral, and seven characters.</p>
+        </li>
+        <li>  <!-- submit과 button을 합침 (input으로 해도됨) -->
+          <button type="submit" class ="btn btn--primary">Sign up for GitHub</button>
+          <p class="caption">By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
+        </li>
+      </ul>
+    </form>
+
+  </div>
+</section>
+
+<!-- FEATURE -->
+<section class="section section--feature">
+
+  <div class="summary">
+    <h2 class="summary__title">Welcome home, developers</h2>
+    <p class="summary__description">GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.</p>
+  </div>
+  
+  <div class="video">
+    <div class="video-ratio"> <!--비디오를 관리할 테그-->
+      <iframe width="1044" height="587" src="https://www.youtube.com/embed/afvT1c1ii0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="tiles">
+    <div class="inner">
+
+      <ul class="clearfix">
+        <li>
+          <img src="img/feature-tile__build.png" alt="build">
+          <h3>For everything you build</h3>
+          <p>Host and manage your code on GitHub. You can keep your work private or share it with the world.</p>
+        </li>
+        <li>
+          <img src="img/feature-tile__work.png" alt="work">
+          <h3>A better way to work</h3>
+          <p>From hobbyists to professionals, GitHub helps developers simplify the way they build software.</p>
+        </li>
+        <li>
+          <img src="img/feature-tile__projects.png" alt="projects">
+          <h3>Millions of projects</h3>
+          <p>GitHub is home to millions of open source projects. Try one out or get inspired to create your own.</p>
+        </li>
+        <li>
+          <img src="img/feature-tile__platform.png" alt="platform">
+          <h3>One platform, from start to finish</h3>
+          <p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Where is -->
+<section class="section section--where-is">
+  <div class="inner">
+
+    <div class="summmary">
+      <div class="summary__title">
+        Where is GitHub?
+      </div>  
+      <div class="summary__description">
+        GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+  </div>
+</section>
+
   </div>
 </body>
 </html>
